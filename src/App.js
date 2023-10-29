@@ -4,7 +4,7 @@ import './App.css';
 import Header from './components/Header';
 import Sidebar from './components/Sidebar';
 import store from './utilities/store';
-
+import VideoContainer from './components/VideoContainer';
 function App() {
   return (
       
@@ -12,10 +12,16 @@ function App() {
         <Header/>
         <div className='main-container'>
           <Sidebar/>
-          <div className='video-container'>video container</div>
+          <VideoContainer/>
+
         </div>
       </Provider>
   );
 }
 
 export default App;
+
+
+
+// https://api.dicebear.com/7.x/notionists/svg?seed=John?size=64
+// https://source.unsplash.com/random/600×400?healthy 
