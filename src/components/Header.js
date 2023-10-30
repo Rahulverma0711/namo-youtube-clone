@@ -20,7 +20,7 @@ const Header = () => {
        <div className='header-center flex'>
           <input className=' input-box' type='text'></input>
           <button className='search-btn'><SearchOutlinedIcon fontSize="small" /></button>
-          <MicIcon sx={{ fontSize: 40 }}  className='icons'></MicIcon>
+          <div className='mic'><MicIcon sx={{ fontSize: 40 }}  className='icons'></MicIcon></div>
        </div>
        <div className='header-right flex'>
           <VideoCallOutlinedIcon sx={{ fontSize: 40 }}  className='hover-icons'></VideoCallOutlinedIcon>

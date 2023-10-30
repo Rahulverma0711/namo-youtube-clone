@@ -5,17 +5,20 @@ import Header from './components/Header';
 import Sidebar from './components/Sidebar';
 import store from './utilities/store';
 import VideoContainer from './components/VideoContainer';
+
 function App() {
   return (
-      
-      <Provider store={store} className='wrapper'>
+      <div className='wrapper'>
+        <Provider store={store}>
         <Header/>
         <div className='main-container'>
           <Sidebar/>
           <VideoContainer/>
-
         </div>
       </Provider>
+
+      </div>
+
   );
 }
 
