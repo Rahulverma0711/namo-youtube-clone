@@ -36,6 +36,8 @@ const Sidebar = () => {
           <HomeIcon className='icon'/>
           <h4>Home</h4>
         </li>
+        
+        
         <li className='sidebar-item flex' >
           <SlowMotionVideoIcon className='icon'/>
           <h4>Shorts</h4>

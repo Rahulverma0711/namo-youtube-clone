@@ -6,6 +6,7 @@ import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined';
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 import { toggleMenu } from '../utilities/appSlice';
 import { useDispatch } from 'react-redux';
+import { Link } from 'react-router-dom';
 const Header = () => {
   const dispatch=useDispatch();
   const toggleMenuHandler=()=>{
@@ -30,6 +31,7 @@ const Header = () => {
           <NotificationsNoneOutlinedIcon md={{ fontSize: 40 }} sx={{ fontSize: 40 }}  className='hover-icons'></NotificationsNoneOutlinedIcon>
           <PersonOutlinedIcon md={{ fontSize: 40 }} sx={{ fontSize: 40 }}  className='hover-icons'></PersonOutlinedIcon>
        </div>   
+
     </div>
   )
 }

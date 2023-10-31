@@ -2,29 +2,35 @@
 import { Provider } from 'react-redux';
 import './App.css';
 import Header from './components/Header';
-import Sidebar from './components/Sidebar';
 import store from './utilities/store';
 import VideoContainer from './components/VideoContainer';
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import WatchPage from './components/WatchPage';
+import MainContainer from './components/MainContainer';
+const appRouter=createBrowserRouter([{
+  path:"/",
+  element:<MainContainer/>,
+  children:[
+    {
+      path:"/",
+      element:<VideoContainer/>
 
+    },
+    {
+    path:"watch",
+    element:<WatchPage/>
+    }
+]
+}])
 function App() {
   return (
+    <Provider store={store}>
       <div className='wrapper'>
-        <Provider store={store}>
         <Header/>
-        <div className='main-container'>
-          <Sidebar/>
-          <VideoContainer/>
-        </div>
-      </Provider>
-
+        <RouterProvider router={appRouter}/>
       </div>
-
+    </Provider>
   );
 }
 
 export default App;
-
-
-
-// https://api.dicebear.com/7.x/notionists/svg?seed=John?size=64
-// https://source.unsplash.com/random/600×400?healthy 
