@@ -18,14 +18,17 @@ const Header = () => {
           <h2>YouTube<sup className='logo-superscript'>IN</sup></h2>
        </div>
        <div className='header-center flex'>
-          <input className=' input-box' type='text'></input>
-          <button className='search-btn'><SearchOutlinedIcon fontSize="small" /></button>
-          <div className='mic'><MicIcon sx={{ fontSize: 40 }}  className='icons'></MicIcon></div>
+         <div className='flex'>
+            <input className=' input-box' type='text'></input>
+            <button className='search-btn'><SearchOutlinedIcon  md={{ fontSize: 44 }} sx={{ fontSize: 18 }} /></button>
+         </div>
+          
+          <div className='mic'><MicIcon  sx={{ fontSize: 34 }}   className='icons'></MicIcon></div>
        </div>
        <div className='header-right flex'>
-          <VideoCallOutlinedIcon sx={{ fontSize: 40 }}  className='hover-icons'></VideoCallOutlinedIcon>
-          <NotificationsNoneOutlinedIcon sx={{ fontSize: 40 }}  className='hover-icons'></NotificationsNoneOutlinedIcon>
-          <PersonOutlinedIcon sx={{ fontSize: 40 }}  className='hover-icons'></PersonOutlinedIcon>
+          <VideoCallOutlinedIcon md={{ fontSize: 32 }} sx={{ fontSize: 40 }} className='hover-icons'></VideoCallOutlinedIcon>
+          <NotificationsNoneOutlinedIcon md={{ fontSize: 40 }} sx={{ fontSize: 40 }}  className='hover-icons'></NotificationsNoneOutlinedIcon>
+          <PersonOutlinedIcon md={{ fontSize: 40 }} sx={{ fontSize: 40 }}  className='hover-icons'></PersonOutlinedIcon>
        </div>   
     </div>
   )
